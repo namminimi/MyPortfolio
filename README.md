@@ -19,35 +19,39 @@
 #### 오픈마인드 - 팀프로젝트 / 개발기간: 23.11.03 - 23.11.17
 <a href="https://github.com/Team2-Project-OpenMind/OpenMind_Team2" >GitHub 이동</a>
 
-#### 야구게임 - 팀프로젝트 / 개발기간: 22.11.18 - 22.11.25
-<a href="https://github.com/namminimi/baseball-project1" >GitHub 이동</a>
+#### 다양한 아이스크림 판매 - 개별 프로젝트 / 개발기간: 23.03.09 - 23.04.07
+<a href="https://github.com/namminimi/ice-cream" >GitHub 클라이언트 이동</a>
 
-#### 무단횡단하기 게임 - 개인 프로젝트 / 개발기간: 22.12.05 - 22.12.14
-<a href="https://github.com/namminimi/crazyGame-project2" >GitHub 이동</a>
+<a href="https://github.com/namminimi/ice-cream-server" >GitHub 서버 이동</a>
+
+<a href="https://ice-cream-iota.vercel.app/" >웹사이트 이동</a>
+
+#### 영화 커뮤니티 - 팀 프로젝트 / 개발기간: 23.02.01 - 23.02.14
+<a href="https://github.com/namminimi/movie-react" >GitHub 클라이언트 이동</a>
+
+<a href="https://github.com/namminimi/movie-server2" >GitHub 서버 이동</a>
+
+<a href="https://movie-react-khaki.vercel.app/" >웹사이트 이동</a>
 
 #### 의류쇼핑몰 - 팀 프로젝트 / 개발기간: 22.12.20 - 23.01.03
 <a href="https://github.com/namminimi/shopping" >GitHub 이동</a>
 
 <a href="http://uou413.dothome.co.kr/shopping/index.php" >웹사이트 이동</a>
 
-#### 영화 커뮤니티 - 팀 프로젝트 / 개발기간: 23.02.01 - 23.02.14
-<a href="https://github.com/namminimi/movie-react" >GitHub 클라이언트 이동</a>
+#### 무단횡단하기 게임 - 개인 프로젝트 / 개발기간: 22.12.05 - 22.12.14
+<a href="https://github.com/namminimi/crazyGame-project2" >GitHub 이동</a>
+
+#### 야구게임 - 팀프로젝트 / 개발기간: 22.11.18 - 22.11.25
+<a href="https://github.com/namminimi/baseball-project1" >GitHub 이동</a>
 
 
-<a href="https://github.com/namminimi/movie-server2" >GitHub 서버 이동</a>
 
 
-<a href="https://movie-react-khaki.vercel.app/" >웹사이트 이동</a>
 
 
-#### 다양한 아이스크림 판매 - 개별 프로젝트 / 개발기간: 23.03.09 - 23.04.07
-<a href="https://github.com/namminimi/ice-cream" >GitHub 클라이언트 이동</a>
 
 
-<a href="https://github.com/namminimi/ice-cream-server" >GitHub 서버 이동</a>
 
-
-<a href="https://ice-cream-iota.vercel.app/" >웹사이트 이동</a>
 
 
 
