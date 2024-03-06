@@ -8,3 +8,9 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .flex-center {
+    @apply flex flex-row items-center justify-center;
+  }
+}
