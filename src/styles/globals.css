@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -12,5 +11,11 @@
 @layer components {
   .flex-center {
     @apply flex flex-row items-center justify-center;
+  }
+  .section-main {
+    @apply mt-60pxr flex flex-col gap-20pxr;
+  }
+  .box {
+    @apply flex-center flex-col items-start gap-50pxr rounded-2xl px-100pxr py-50pxr shadow-header;
   }
 }
