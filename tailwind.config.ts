@@ -42,6 +42,8 @@ const config: Config = {
       },
       colors: {
         gray600: '#B6B2B2',
+        blue940: '#9AA4FF',
+        white: '#ffffff',
       },
     },
     screens: {
@@ -115,6 +117,12 @@ const config: Config = {
           letterSpacing: pxToRem(-0.22),
           fontWeight: '700',
           fontFamily: 'Pretendard',
+        },
+        '.font-title2-Inter-bold': {
+          fontSize: pxToRem(22),
+          letterSpacing: pxToRem(-0.22),
+          fontWeight: '700',
+          fontFamily: 'Inter',
         },
         '.font-title2': {
           fontSize: pxToRem(22),
