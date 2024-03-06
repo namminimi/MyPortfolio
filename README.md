@@ -1,40 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖥️ 프로젝트 소개
+나의 포트폴리오 소개
+<br>
 
-## Getting Started
+## 🕰️ 개발 기간
+* 24.03.05 - 
 
-First, run the development server:
+## ⚙️ 기술 스택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 프로젝트 목록
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### CamPro(초보 캠퍼들을 위한 캠핑장 추천 서비스) - 팀프로젝트 / 개발기간: 24.01.19 - 24.02.29
+<a href="https://github.com/teamCampro/campro_FE" >GitHub 이동</a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#### Taskify(일정 관리 서비스) - 팀프로젝트 / 개발기간: 23.12.18 - 24.01.05
+<a href="https://github.com/Peachy-Peachy/Taskify" >GitHub 이동</a>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### 오픈마인드 - 팀프로젝트 / 개발기간: 23.11.03 - 23.11.17
+<a href="https://github.com/Team2-Project-OpenMind/OpenMind_Team2" >GitHub 이동</a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### 다양한 아이스크림 판매 - 개별 프로젝트 / 개발기간: 23.03.09 - 23.04.07
+<a href="https://github.com/namminimi/ice-cream" >GitHub 클라이언트 이동</a>
 
-## Learn More
+<a href="https://github.com/namminimi/ice-cream-server" >GitHub 서버 이동</a>
 
-To learn more about Next.js, take a look at the following resources:
+<a href="https://ice-cream-iota.vercel.app/" >웹사이트 이동</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 영화 커뮤니티 - 팀 프로젝트 / 개발기간: 23.02.01 - 23.02.14
+<a href="https://github.com/namminimi/movie-react" >GitHub 클라이언트 이동</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://github.com/namminimi/movie-server2" >GitHub 서버 이동</a>
 
-## Deploy on Vercel
+<a href="https://movie-react-khaki.vercel.app/" >웹사이트 이동</a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 의류쇼핑몰 - 팀 프로젝트 / 개발기간: 22.12.20 - 23.01.03
+<a href="https://github.com/namminimi/shopping" >GitHub 이동</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="http://uou413.dothome.co.kr/shopping/index.php" >웹사이트 이동</a>
+
+#### 무단횡단하기 게임 - 개인 프로젝트 / 개발기간: 22.12.05 - 22.12.14
+<a href="https://github.com/namminimi/crazyGame-project2" >GitHub 이동</a>
+
+#### 야구게임 - 팀프로젝트 / 개발기간: 22.11.18 - 22.11.25
+<a href="https://github.com/namminimi/baseball-project1" >GitHub 이동</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
