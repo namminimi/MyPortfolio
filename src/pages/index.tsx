@@ -1,7 +1,12 @@
+import { Footer, Header } from '@/components';
+import MainContainer from '@/containers/main/MainContainer';
+
 export default function Home() {
   return (
     <>
-      <div>안녕</div>
+      <Header />
+      <MainContainer />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,10 @@
+export { default as IconCalender } from './calender.svg';
+export { default as IconEducation } from './education.svg';
+export { default as IconFile } from './file.svg';
+export { default as IconGit } from './git.svg';
+export { default as IconLink } from './link.svg';
+export { default as IconLinks } from './links.svg';
+export { default as IconPeople } from './people.svg';
+export { default as IconPhone } from './phone.svg';
+export { default as IconProfile } from './profile.svg';
+export { default as IconSend } from './send.svg';
