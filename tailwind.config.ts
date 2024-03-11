@@ -41,9 +41,11 @@ const config: Config = {
         header: '0px 4px 20px 0px rgba(0, 0, 0, 0.25)',
       },
       colors: {
+        gray100: '#F5F5F5',
         gray600: '#B6B2B2',
         blue940: '#9AA4FF',
         white: '#ffffff',
+        red800: '#FF8080',
       },
     },
     screens: {
@@ -154,6 +156,12 @@ const config: Config = {
           fontWeight: '500',
           fontFamily: 'Pretendard',
         },
+        '.font-title3-Inter-medium': {
+          fontSize: pxToRem(20),
+          letterSpacing: pxToRem(-0.2),
+          fontWeight: '500',
+          fontFamily: 'Inter',
+        },
 
         '.font-body1': {
           fontSize: pxToRem(18),
@@ -171,6 +179,12 @@ const config: Config = {
           fontSize: pxToRem(18),
           letterSpacing: pxToRem(-0.18),
           fontFamily: 'Pretendard',
+          fontWeight: '700',
+        },
+        '.font-body1-Inter-bold': {
+          fontSize: pxToRem(18),
+          letterSpacing: pxToRem(-0.18),
+          fontFamily: 'Inter',
           fontWeight: '700',
         },
         '.font-body1-medium': {
