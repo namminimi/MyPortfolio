@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Card from '../card';
+import { ProjectListType } from '@/pages';
 
-function CardLists() {
+function CardLists({ projectLists }: ProjectListType) {
+  if (!projectLists) return;
   return (
     <ul className='flex-center mt-30pxr flex-wrap justify-start gap-25pxr'>
-      {Array.from({ length: 6 }, (_, index) => {
-        return <Card key={index} />;
+      {projectLists.map((list) => {
+        return <Card key={list.p_no} projectList={list} />;
       })}
     </ul>
   );

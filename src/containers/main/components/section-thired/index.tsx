@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import SelectList from '../selectList';
 import CardLists from '../cardLists';
+import { ProjectListType, ProjectType } from '@/pages';
 
 export interface SelectListStateType {
   id: number;
@@ -8,7 +9,7 @@ export interface SelectListStateType {
   isDone: boolean;
 }
 
-function ProjectsBox() {
+function ProjectsBox({ projectLists }: ProjectListType) {
   const [selectList, setSelectList] = useState<SelectListStateType[]>([
     { id: 1, name: '전체', isDone: true },
     { id: 2, name: '팀', isDone: true },
@@ -19,7 +20,7 @@ function ProjectsBox() {
       <ul className='flex gap-10pxr'>
         <SelectList lists={selectList} />
       </ul>
-      <CardLists />
+      <CardLists projectLists={projectLists} />
       <div className='flex-center mt-30pxr font-title3-semibold'>1 2 3 4 5</div>
     </div>
   );
