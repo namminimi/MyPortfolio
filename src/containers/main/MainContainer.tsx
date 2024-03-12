@@ -2,8 +2,13 @@ import AboutMe from '@/containers/main/components/section-first';
 import { Title } from '@/components';
 import LinksBox from '@/containers/main/components/section-second';
 import ProjectsBox from './components/section-thired';
+import { ProjectType } from '@/pages';
 
-function MainContainer() {
+interface MainContainerType {
+  projectLists: ProjectType[];
+}
+
+function MainContainer({ projectLists }: MainContainerType) {
   return (
     <main className='m-auto max-w-1100pxr'>
       <section className='section-main'>
@@ -16,7 +21,7 @@ function MainContainer() {
       </section>
       <section className='section-main'>
         <Title type='projects' />
-        <ProjectsBox />
+        <ProjectsBox projectLists={projectLists} />
       </section>
     </main>
   );

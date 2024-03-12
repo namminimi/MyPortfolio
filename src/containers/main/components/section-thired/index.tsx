@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import SelectList from '../selectList';
 import CardLists from '../cardLists';
+import { ProjectListType, ProjectType } from '@/pages';
+import Pagination from '@/components/Pagination';
 
 export interface SelectListStateType {
   id: number;
@@ -8,19 +10,34 @@ export interface SelectListStateType {
   isDone: boolean;
 }
 
-function ProjectsBox() {
-  const [selectList, setSelectList] = useState<SelectListStateType[]>([
-    { id: 1, name: '전체', isDone: true },
-    { id: 2, name: '팀', isDone: true },
-    { id: 3, name: '개인', isDone: true },
-  ]);
+function ProjectsBox({ projectLists }: ProjectListType) {
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [postsPerPage, setPostPerPage] = useState(6); // 한페이지당 렌더링 되는 데이터수
+
+  //페이지 숫자 계산
+  const indexOfLast = currentPage * postsPerPage; //페이지 마지막수 ex 1 * 10
+  const indexOfFirst = indexOfLast - postsPerPage; // 페이지 첫번째 수 ex 10 - 10 = 0
+
+  //데이터 몇번까지 자르기
+  const currentPosts = (projectLists: ProjectType[]) => {
+    let currentPosts = projectLists.slice(indexOfFirst, indexOfLast);
+    return currentPosts;
+  };
+
+  const newProjectLists = currentPosts(projectLists);
+
   return (
     <div>
-      <ul className='flex gap-10pxr'>
-        <SelectList lists={selectList} />
-      </ul>
-      <CardLists />
-      <div className='flex-center mt-30pxr font-title3-semibold'>1 2 3 4 5</div>
+      <h3 className='font-h3-semibold'>전체 {projectLists.length}</h3>
+      <CardLists projectLists={newProjectLists} />
+      <div className='flex-center mt-30pxr font-title3-semibold'>
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={projectLists.length}
+          paginate={setCurrentPage}
+          currentPage={currentPage}
+        />
+      </div>
     </div>
   );
 }

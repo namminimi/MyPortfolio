@@ -8,7 +8,7 @@ function AboutMe() {
         <Image
           src={'/avifs/profileImage.avif'}
           width={200}
-          height={329}
+          height={266}
           className='rounded-3xl'
           alt='프로필이미지'
         />
@@ -16,7 +16,7 @@ function AboutMe() {
           {PROFILE.map((list, index) => {
             return (
               <li className='flex-center flex-col items-start' key={index}>
-                <h4 className='font-title1-Inter-semibold flex-center gap-5pxr'>
+                <h4 className='flex-center gap-5pxr font-title1-Inter-semibold'>
                   <div className='h-16pxr w-16pxr'>{list.icon}</div>
                   <span>{list.type}</span>
                 </h4>

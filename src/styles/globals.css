@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer components {
   .flex-center {
     @apply flex flex-row items-center justify-center;
@@ -18,4 +12,64 @@
   .box {
     @apply flex-center flex-col items-start gap-50pxr rounded-2xl px-100pxr py-50pxr shadow-header;
   }
+  .modal {
+    @apply absolute-center z-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .line-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .scroll::-webkit-scrollbar {
+    /*  background-color: white; */
+    width: 5px;
+  }
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: #c8c8c8;
+    border-radius: 30px;
+  }
+  .scroll::-webkit-scrollbar-track {
+  }
+
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .p_function_title {
+    @apply font-h1-semibold;
+  }
+
+  .absolute-center {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+.mySwiper .swiper-slide {
+  filter: brightness(50%);
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  filter: brightness(100%);
+}
+
+.p_function_title {
+  @apply mb-10pxr font-body1-bold;
+}
+
+/* 역할 스타일 */
+
+.my-role li {
+  list-style: inside;
+}
+
+.my-role li ul li {
+  list-style: inside;
 }
