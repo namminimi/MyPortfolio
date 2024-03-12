@@ -24,6 +24,9 @@ function CardLists({ projectLists }: ProjectListType) {
   useEffect(() => {
     if (!projectId) return;
     getProjectData(projectId);
+    return () => {
+      setSelectProjectList(null);
+    };
   }, [projectId]);
 
   if (!projectLists) return;
