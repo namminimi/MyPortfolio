@@ -8,10 +8,12 @@ import { IconClose, IconGit, IconLink } from '@/public/svgs';
 import CardBox from '@/components/Modal/cardBox';
 
 interface CardImformationType {
-  projectLists: ProjectType;
+  projectLists: ProjectType | null;
+  handleClose?: () => void;
 }
 
-function CardImformation({ projectLists }: CardImformationType) {
+function CardImformation({ projectLists, handleClose }: CardImformationType) {
+  if (!projectLists) return;
   const {
     p_images,
     p_backend,
@@ -32,7 +34,7 @@ function CardImformation({ projectLists }: CardImformationType) {
     <CardBox>
       <div className='flex-center mb-10pxr justify-between'>
         <h2 className='text-black font-title1-semibold'>{p_title}</h2>
-        <IconClose fill='#B6B2B2' />
+        <IconClose fill='#B6B2B2' onClick={handleClose} />
       </div>
       <ImageSlider parseImage={parseImage} />
       <div className='flex-center flex-col items-start gap-10pxr pt-20pxr'>

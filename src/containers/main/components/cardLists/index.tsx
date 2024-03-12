@@ -1,26 +1,45 @@
 import Card from '../card';
-import { ProjectListType } from '@/pages';
+import { ProjectListType, ProjectType } from '@/pages';
 import dynamic from 'next/dynamic';
 import { Modal } from '@/components';
 import CardImformation from '@/containers/main/components/cardModal/CardImformation';
+import { useEffect, useState } from 'react';
+import getProject from '@/data/getProject';
 
 const NoSSRModal = dynamic(() => import('@/components/Modal/Modal'), {
   ssr: false,
 });
 
 function CardLists({ projectLists }: ProjectListType) {
+  const [projectId, setProjectId] = useState<number | null>(null);
+  const [selectProjectList, setSelectProjectList] =
+    useState<ProjectType | null>(null);
+
+  const getProjectData = async (id: number) => {
+    const data = await getProject(id);
+    if (!data) return;
+    setSelectProjectList(data[0]);
+  };
+
+  useEffect(() => {
+    if (!projectId) return;
+    getProjectData(projectId);
+  }, [projectId]);
+
   if (!projectLists) return;
-  console.log(projectLists[4]);
+
   return (
     <>
       <ul className='flex-center mt-30pxr flex-wrap justify-start gap-25pxr'>
         {projectLists.map((list) => {
-          return <Card key={list.p_no} projectList={list} />;
+          return (
+            <Card key={list.p_no} projectList={list} updateId={setProjectId} />
+          );
         })}
       </ul>
       <NoSSRModal>
-        <Modal.Window>
-          <CardImformation projectLists={projectLists[4]} />
+        <Modal.Window id={projectId} update={setProjectId}>
+          <CardImformation projectLists={selectProjectList} />
         </Modal.Window>
       </NoSSRModal>
     </>

@@ -1,6 +1,6 @@
 import { Footer, Header } from '@/components';
 import MainContainer from '@/containers/main/MainContainer';
-import getProjectList from '@/data/projects';
+import getProjectList from '@/data/getProjects';
 
 export interface ProjectType {
   p_no: number;

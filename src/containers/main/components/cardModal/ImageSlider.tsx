@@ -34,7 +34,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
                   src={image}
                   fill
                   unoptimized
-                  objectFit='contain'
+                  style={{ objectFit: 'contain' }}
                   alt='이미지'
                 />
               </div>
@@ -48,7 +48,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
           thumbsSwiper;
         }}
         spaceBetween={20}
-        slidesPerView={3.5}
+        slidesPerView={4}
         freeMode={true}
         initialSlide={0}
         watchSlidesProgress={true}
@@ -59,7 +59,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
         {parseImage.map((image: string, index: number) => {
           return (
             <SwiperSlide key={index} className='inline-block !w-auto'>
-              <div className='relative h-150pxr w-250pxr cursor-pointer'>
+              <div className='relative h-100pxr w-178pxr cursor-pointer'>
                 <Image src={image} fill unoptimized alt='이미지' />
               </div>
             </SwiperSlide>
