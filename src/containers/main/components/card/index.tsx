@@ -1,4 +1,5 @@
 import { ProjectType } from '@/pages';
+import getTextFormet from '@/utils/textFormat';
 import Image from 'next/image';
 
 interface CardType {
@@ -7,7 +8,6 @@ interface CardType {
 
 function Card({ projectList }: CardType) {
   const { p_main_image, p_title, p_intro, p_party, p_date } = projectList;
-  const intro = p_intro.replace(/\<br>/g, '\n');
 
   const changeImageStyle = (title: string) => {
     if (title.includes('야구') || title.includes('자동차')) {
@@ -21,7 +21,7 @@ function Card({ projectList }: CardType) {
 
   return (
     <li className='w-350pxr cursor-pointer rounded-2xl border'>
-      <div className='flex-center bg-gray100 h-200pxr w-full rounded-t-2xl border-b'>
+      <div className='flex-center h-200pxr w-full rounded-t-2xl border-b bg-gray100'>
         <div className={`relative ${changeImageStyle(p_title)}`}>
           <Image
             className='rounded-t-2xl'
@@ -34,7 +34,7 @@ function Card({ projectList }: CardType) {
       <div className='flex flex-col justify-start gap-5pxr px-20pxr py-8pxr'>
         <h4 className='font-body1-Inter-bold'>{p_title}</h4>
         <p className='line-over h-50pxr overflow-hidden font-body2-medium'>
-          {intro}
+          {getTextFormet(p_intro)}
         </p>
 
         <div

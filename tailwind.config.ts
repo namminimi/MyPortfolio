@@ -37,6 +37,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      zIndex: {
+        full: '9999',
+      },
       boxShadow: {
         header: '0px 4px 20px 0px rgba(0, 0, 0, 0.25)',
       },

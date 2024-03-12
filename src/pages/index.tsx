@@ -1,7 +1,6 @@
 import { Footer, Header } from '@/components';
 import MainContainer from '@/containers/main/MainContainer';
 import getProjectList from '@/data/projects';
-import { axiosInstance } from '@/utils/axiosInstance';
 
 export interface ProjectType {
   p_no: number;
@@ -18,6 +17,7 @@ export interface ProjectType {
   p_main_image: string;
   p_problem: string;
   p_url?: string;
+  p_language: string;
 }
 
 export interface ProjectListType {
