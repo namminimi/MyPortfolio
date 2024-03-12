@@ -34,7 +34,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
                   src={image}
                   fill
                   unoptimized
-                  objectFit='cover'
+                  objectFit='contain'
                   alt='이미지'
                 />
               </div>

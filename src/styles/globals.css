@@ -29,10 +29,6 @@
     -webkit-box-orient: vertical;
   }
 
-  .p_function_title {
-    @apply font-h1-semibold;
-  }
-
   .scroll::-webkit-scrollbar {
     /*  background-color: white; */
     width: 5px;
@@ -47,6 +43,10 @@
   .scroll-hidden::-webkit-scrollbar {
     display: none;
   }
+  .p_function_title {
+    @apply font-h1-semibold;
+  }
+
   .absolute-center {
     @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
   }
@@ -61,5 +61,15 @@
 }
 
 .p_function_title {
-  font-weight: 600;
+  @apply mb-10pxr font-body1-bold;
+}
+
+/* 역할 스타일 */
+
+.my-role li {
+  list-style: inside;
+}
+
+.my-role li ul li {
+  list-style: inside;
 }

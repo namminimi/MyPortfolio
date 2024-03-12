@@ -47,6 +47,7 @@ const config: Config = {
         gray100: '#F5F5F5',
         gray600: '#B6B2B2',
         blue940: '#9AA4FF',
+        black: '#000000',
         white: '#ffffff',
         red800: '#FF8080',
       },
