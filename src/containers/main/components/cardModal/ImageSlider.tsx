@@ -33,7 +33,6 @@ function ImageSlider({ parseImage }: ImageSliderType) {
                 <Image
                   src={image}
                   fill
-                  priority
                   unoptimized
                   style={{ objectFit: 'contain' }}
                   alt='이미지'
