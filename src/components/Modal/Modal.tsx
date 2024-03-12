@@ -28,7 +28,7 @@ function Window({ children, id, update }: WindowType) {
     if (id) {
       open();
     }
-  }, [id]);
+  }, [id, open]);
 
   if (!isModal) return;
 
