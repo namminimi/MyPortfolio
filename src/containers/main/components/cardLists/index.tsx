@@ -5,7 +5,6 @@ import { Modal } from '@/components';
 import CardImformation from '@/containers/main/components/cardModal/CardImformation';
 import { useEffect, useState } from 'react';
 import getProject from '@/data/getProject';
-
 const NoSSRModal = dynamic(() => import('@/components/Modal/Modal'), {
   ssr: false,
 });
