@@ -22,7 +22,7 @@ function AboutMe() {
                   <div className='h-16pxr w-16pxr'>{list.icon}</div>
                   <span>{list.type}</span>
                 </h4>
-                <h5 className='font-caption1-Inter-semibold pl-21pxr tablet:font-body2-bold pc:font-body1-bold'>
+                <h5 className='pl-21pxr font-caption1-semibold tablet:font-body2-bold pc:font-body1-bold'>
                   {list.name}
                 </h5>
               </li>
@@ -30,7 +30,7 @@ function AboutMe() {
           })}
         </ul>
       </div>
-      <p className='leading-relaxed font-body2-bold pc:font-body1-bold'>
+      <p className='leading-relaxed font-caption1-semibold pc:font-body1-bold'>
         안녕하세요. 기계설계 전공을 시작으로 프로그래밍에 매료되어 프론트엔드
         개발자로 성장한 남민섭입니다. 프론트엔드 개발에 대한 열정을 바탕으로
         HTML, CSS, JavaScript, React 등의 기술을 숙련하였고, 이를 통해 다양한
