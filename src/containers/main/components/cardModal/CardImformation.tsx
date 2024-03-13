@@ -34,7 +34,11 @@ function CardImformation({ projectLists, handleClose }: CardImformationType) {
     <CardBox>
       <div className='flex-center mb-10pxr justify-between'>
         <h2 className='text-black font-title1-semibold'>{p_title}</h2>
-        <IconClose fill='#B6B2B2' onClick={handleClose} />
+        <IconClose
+          fill='#B6B2B2'
+          className='cursor-pointer'
+          onClick={handleClose}
+        />
       </div>
       <ImageSlider parseImage={parseImage} />
       <div className='flex-center flex-col items-start gap-10pxr pt-20pxr'>
