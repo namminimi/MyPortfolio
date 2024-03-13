@@ -38,7 +38,9 @@ function ProjectsBox({ projectLists }: ProjectListType) {
   }, [mediaQuery]);
   return (
     <div>
-      <h3 className='font-h3-semibold'>전체 {projectLists.length}</h3>
+      <h3 className='teblet:font-h3-semibold font-title2-semibold'>
+        전체 {projectLists.length}
+      </h3>
       <CardLists projectLists={newProjectLists} />
       <div className='flex-center mt-30pxr font-title3-semibold'>
         <Pagination
