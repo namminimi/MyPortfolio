@@ -32,7 +32,7 @@ function CardLists({ projectLists }: ProjectListType) {
 
   return (
     <>
-      <ul className='flex-center mt-30pxr flex-wrap justify-start gap-25pxr'>
+      <ul className='tablet970:grid-cols-3-350 mt-30pxr grid grid-cols-1 gap-25pxr tablet:grid-cols-2'>
         {projectLists.map((list) => {
           return (
             <Card key={list.p_no} projectList={list} updateId={setProjectId} />

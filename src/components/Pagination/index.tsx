@@ -90,7 +90,7 @@ const Pagination = ({
               isNoneNumChange(number.id)
                 ? 'flex'
                 : 'hidden'
-            }`}
+            } ${number.id === currentPage ? 'text-black' : 'text-gray600'}`}
             onClick={() => {
               paginate(number.id);
             }}

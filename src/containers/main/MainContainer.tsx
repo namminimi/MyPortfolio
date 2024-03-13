@@ -10,7 +10,7 @@ interface MainContainerType {
 
 function MainContainer({ projectLists }: MainContainerType) {
   return (
-    <main className='m-auto max-w-1100pxr'>
+    <main className='m-auto max-w-1140pxr px-20pxr tablet:max-w-1220pxr tablet:px-60pxr'>
       <section className='section-main'>
         <Title type='about' />
         <AboutMe />

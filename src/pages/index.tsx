@@ -1,6 +1,7 @@
 import { Footer, Header } from '@/components';
 import MainContainer from '@/containers/main/MainContainer';
 import getProjectList from '@/data/getProjects';
+import Head from 'next/head';
 
 export interface ProjectType {
   p_no: number;
@@ -45,6 +46,9 @@ export async function getServerSideProps() {
 export default function Home({ projectLists }: ProjectListType) {
   return (
     <>
+      <Head>
+        <title>Nam Minseop&apos;s Portfolio</title>
+      </Head>
       <Header />
       <MainContainer projectLists={projectLists} />
       <Footer />

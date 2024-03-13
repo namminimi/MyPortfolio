@@ -6,7 +6,7 @@ interface CardBoxType {
 
 function CardBox({ children }: CardBoxType) {
   return (
-    <div className='scroll-hidden h-900pxr w-850pxr overflow-y-scroll rounded-3xl bg-white p-40pxr'>
+    <div className='scroll-hidden h-screen w-screen overflow-y-scroll bg-white p-0pxr tablet:h-900pxr tablet:max-w-740pxr tablet:rounded-3xl tablet:p-40pxr'>
       {children}
     </div>
   );

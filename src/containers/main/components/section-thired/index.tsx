@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SelectList from '../selectList';
 import CardLists from '../cardLists';
 import { ProjectListType, ProjectType } from '@/pages';
 import Pagination from '@/components/Pagination';
+import useMediaQueries from '@/hooks/useMediaQueries';
 
 export interface SelectListStateType {
   id: number;
@@ -11,6 +12,9 @@ export interface SelectListStateType {
 }
 
 function ProjectsBox({ projectLists }: ProjectListType) {
+  const mobileMediaQuery = useMediaQueries({ breakpoint: 969 })?.mediaQuery
+    .matches;
+  const mediaQuery = typeof window !== 'undefined' ? mobileMediaQuery : false;
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postsPerPage, setPostPerPage] = useState(6); // 한페이지당 렌더링 되는 데이터수
 
@@ -25,10 +29,18 @@ function ProjectsBox({ projectLists }: ProjectListType) {
   };
 
   const newProjectLists = currentPosts(projectLists);
-
+  useEffect(() => {
+    if (mediaQuery) {
+      setPostPerPage(4);
+    } else {
+      setPostPerPage(6);
+    }
+  }, [mediaQuery]);
   return (
     <div>
-      <h3 className='font-h3-semibold'>전체 {projectLists.length}</h3>
+      <h3 className='teblet:font-h3-semibold font-title2-semibold'>
+        전체 {projectLists.length}
+      </h3>
       <CardLists projectLists={newProjectLists} />
       <div className='flex-center mt-30pxr font-title3-semibold'>
         <Pagination
