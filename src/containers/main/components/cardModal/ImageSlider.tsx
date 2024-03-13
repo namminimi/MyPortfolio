@@ -31,7 +31,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
         {parseImage.map((image: string, index: number) => {
           return (
             <SwiperSlide key={index}>
-              <div className='relative h-350pxr w-full rounded-3xl'>
+              <div className='mobile430:h-300pxr relative h-200pxr w-full rounded-md bg-gray100 tablet:h-350pxr'>
                 <Image
                   src={image}
                   fill
