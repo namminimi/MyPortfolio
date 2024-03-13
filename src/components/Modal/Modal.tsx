@@ -33,6 +33,22 @@ function Window({ children, id, update }: WindowType) {
     };
   }, [id, open, update]);
 
+  /* 모달 띄울시 스크롤바 지우지않고 고정 */
+  useEffect(() => {
+    if (isModal) {
+      document.body.style.cssText = `
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+      return () => {
+        const scrollY = document.body.style.top;
+        document.body.style.cssText = '';
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+      };
+    }
+  }, [isModal]);
+
   if (!isModal) return;
 
   const handleClose = () => {
