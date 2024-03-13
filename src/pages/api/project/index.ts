@@ -7,7 +7,7 @@ export default async function handler(
 ) {
   try {
     const db = await pool.getConnection();
-    const [projectList] = await db.query(`select * from project`);
+    const [projectList] = await db.query(`select * from project order by p_no desc`);
 
     db.release();
     res.status(200).json({ result: projectList });

@@ -40,9 +40,12 @@ function Card({ projectList, updateId }: CardType) {
       </div>
       <div className='flex flex-col justify-start gap-5pxr px-20pxr py-8pxr'>
         <h4 className='font-body1-Inter-bold'>{p_title}</h4>
-        <p className='line-over h-50pxr overflow-hidden font-body2-medium'>
-          {getTextFormet(p_intro)}
-        </p>
+        <div
+          className='line-over h-50pxr font-body2-semibold'
+          dangerouslySetInnerHTML={{
+            __html: getTextFormet(p_intro),
+          }}
+        ></div>
         <div
           className={`flex-center h-30pxr w-40pxr rounded-2xl border ${p_party === '개인' ? 'bg-blue940' : 'bg-red800'}  text-white font-caption2-semibold`}
         >
