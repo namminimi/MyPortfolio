@@ -54,7 +54,9 @@ const config: Config = {
     },
     screens: {
       mobile: '320px',
+      mobile430: '430px',
       tablet: '768px',
+      tablet970: '970px',
       pc: '1200px',
     },
     fontFamily: {
@@ -142,6 +144,12 @@ const config: Config = {
           fontWeight: '600',
           fontFamily: 'Pretendard',
         },
+        '.font-title2-Inter-semibold': {
+          fontSize: pxToRem(22),
+          letterSpacing: pxToRem(-0.22),
+          fontWeight: '600',
+          fontFamily: 'Inter',
+        },
         '.font-title3-bold': {
           fontSize: pxToRem(20),
           letterSpacing: pxToRem(-0.2),
@@ -153,6 +161,12 @@ const config: Config = {
           letterSpacing: pxToRem(-0.2),
           fontWeight: '600',
           fontFamily: 'Pretendard',
+        },
+        '.font-title3-Inter-semibold': {
+          fontSize: pxToRem(20),
+          letterSpacing: pxToRem(-0.2),
+          fontWeight: '600',
+          fontFamily: 'Inter',
         },
         '.font-title3-medium': {
           fontSize: pxToRem(20),
@@ -215,6 +229,12 @@ const config: Config = {
           fontFamily: 'Pretendard',
           fontWeight: '700',
         },
+        '.font-body2-Inter-bold': {
+          fontSize: pxToRem(16),
+          letterSpacing: pxToRem(-0.16),
+          fontFamily: 'Inter',
+          fontWeight: '700',
+        },
         '.font-body2-semibold': {
           fontSize: pxToRem(16),
           letterSpacing: pxToRem(-0.16),
@@ -232,6 +252,12 @@ const config: Config = {
           letterSpacing: pxToRem(-0.14),
           fontWeight: '600',
           fontFamily: 'Pretendard',
+        },
+        '.font-caption1-Inter-semibold': {
+          fontSize: pxToRem(14),
+          letterSpacing: pxToRem(-0.14),
+          fontWeight: '600',
+          fontFamily: 'Inter',
         },
         '.font-caption2': {
           fontSize: pxToRem(12),

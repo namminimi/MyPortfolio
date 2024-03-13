@@ -9,3 +9,4 @@ export { default as IconPhone } from './phone.svg';
 export { default as IconProfile } from './profile.svg';
 export { default as IconSend } from './send.svg';
 export { default as IconClose } from './close.svg';
+export { default as IconArrowLeftNon } from './arrowLeft-non.svg';

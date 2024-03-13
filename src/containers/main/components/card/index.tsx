@@ -23,7 +23,7 @@ function Card({ projectList, updateId }: CardType) {
 
   return (
     <li
-      className='w-350pxr cursor-pointer rounded-2xl border'
+      className='w-full cursor-pointer rounded-2xl border'
       onClick={() => updateId(p_no)}
     >
       <div className='flex-center h-200pxr w-full rounded-t-2xl border-b bg-gray100'>
@@ -39,7 +39,9 @@ function Card({ projectList, updateId }: CardType) {
         </div>
       </div>
       <div className='flex flex-col justify-start gap-5pxr px-20pxr py-8pxr'>
-        <h4 className='font-body1-Inter-bold'>{p_title}</h4>
+        <h4 className='title-line-over font-body2-Inter-bold max-w-300pxr tablet:font-body1-Inter-bold'>
+          {p_title}
+        </h4>
         <div
           className='line-over h-40pxr font-caption1-semibold'
           dangerouslySetInnerHTML={{

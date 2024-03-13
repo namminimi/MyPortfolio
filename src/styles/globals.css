@@ -7,10 +7,10 @@
     @apply flex flex-row items-center justify-center;
   }
   .section-main {
-    @apply mt-60pxr flex flex-col gap-20pxr;
+    @apply mt-30pxr flex flex-col gap-20pxr tablet:mt-60pxr;
   }
   .box {
-    @apply flex-center flex-col items-start gap-50pxr rounded-2xl px-100pxr py-50pxr shadow-header;
+    @apply flex-center flex-col gap-25pxr rounded-2xl px-20pxr py-25pxr shadow-header tablet:items-start tablet:gap-50pxr tablet:px-50pxr tablet:py-50pxr pc:px-100pxr;
   }
   .modal {
     @apply absolute-center z-full;
@@ -27,6 +27,14 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+  .title-line-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .grid-cols-3-350 {
+    grid-template-columns: repeat(3, minmax(226px, 350px));
   }
 
   .scroll::-webkit-scrollbar {
@@ -47,6 +55,12 @@
   .absolute-center {
     @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
   }
+  .detail-h3 {
+    @apply mb-10pxr text-black font-body1-bold tablet:font-title2-bold;
+  }
+  .detail-text {
+    @apply font-caption1-semibold tablet:font-body2-semibold;
+  }
 }
 
 .mySwiper .swiper-slide {
@@ -58,7 +72,7 @@
 }
 
 .p_function_title {
-  @apply mb-10pxr !list-none font-body1-bold;
+  @apply mb-10pxr !list-none font-body2-semibold tablet:font-body1-bold;
 }
 
 /* 역할 스타일 */
@@ -69,4 +83,15 @@
 
 .my-role li ul li {
   list-style: inside;
+}
+
+/* swiper */
+
+.navigation-color {
+  --swiper-navigation-color: #b6b2b2;
+  --swiper-pagination-color: blue;
+}
+
+.swiper-pagination-bullet {
+  background-color: #9aa4ff !important;
 }

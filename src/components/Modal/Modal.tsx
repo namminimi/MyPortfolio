@@ -59,7 +59,7 @@ function Window({ children, id, update }: WindowType) {
   return createPortal(
     <div className='absolute-center !fixed h-full w-full overflow-hidden'>
       <div
-        className='inset-0 z-floating fixed flex h-full w-full items-center justify-center bg-black opacity-50'
+        className='inset-0 fixed flex h-full w-full items-center justify-center bg-black opacity-50'
         onClick={handleClose}
       ></div>
       <div className='modal fixed'>

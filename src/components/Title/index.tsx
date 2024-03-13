@@ -22,8 +22,10 @@ const SELECT_TITLE = {
 
 function Title({ type }: TitleType) {
   return (
-    <h2 className='flex-center font-h2-Inter-semibold justify-start gap-10pxr'>
-      <div className='h-32pxr w-32pxr'>{SELECT_TITLE[type].icon}</div>
+    <h2 className='flex-center justify-start gap-10pxr font-title1-Inter-semibold tablet:font-h2-Inter-semibold'>
+      <div className='h-24pxr w-24pxr tablet:h-32pxr tablet:w-32pxr'>
+        {SELECT_TITLE[type].icon}
+      </div>
       <span>{SELECT_TITLE[type].name}</span>
     </h2>
   );
