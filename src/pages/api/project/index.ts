@@ -8,7 +8,7 @@ export default async function handler(
   try {
     const db = await pool.getConnection();
     const [projectList] = await db.query(
-      `select p_no, p_date, p_party, p_title, p_intro from project order by p_no desc`,
+      `select p_no, p_date, p_party, p_title, p_intro, p_main_image from project order by p_no desc`,
     );
 
     db.release();
