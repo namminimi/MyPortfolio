@@ -3,10 +3,10 @@
 <br>
 
 ## 🕰️ 개발 기간
-* 24.03.05 - 
+* 24.03.05 - 진행중
 
 ## ⚙️ 기술 스택
-
+Html, CSS, Tailwind, Next.js(Page router), React, Typescript, mysql
 
 ## 🔗 배포링크
 
@@ -15,6 +15,8 @@
 
 ## 🖼️ 와이어프레임
 <a href="https://www.figma.com/file/vC8O0mYAs588et08Um16NJ/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%AA%A8%EC%9D%8C?type=design&node-id=0%3A1&mode=design&t=pbjUO4m00BGMxQLY-1" >피그마 이동</a>
+
+![image](https://github.com/namminimi/MyPortfolio/assets/111848336/8db12d03-e52c-43b2-9576-e8bb140224b0)
 
 ## 📌 프로젝트 목록
 
