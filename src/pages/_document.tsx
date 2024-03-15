@@ -12,7 +12,7 @@ export default function Document() {
         <meta property='og:description' content='남민섭의 포트폴리오입니다' />
         <meta
           property='og:url'
-          content='https://my-portfolio-mu-azure.vercel.app/'
+          content={process.env.NEXT_PUBLIC_API_BASE_URL}
         />
         {/*<!-- 트위터 --> */}
         <meta name='twitter:card' content='summary_large_image' />
