@@ -8,12 +8,12 @@ type STUDYS_TYPE = {
 const STUDYS: STUDYS_TYPE[] = [
   {
     Done: '코드잇 스프린트 부트캠프(프론트엔드) 1기',
-    term: '2023.09 ~ 2024.03.03',
+    term: '2023.09.05 ~ 2024.03.04',
   },
   {
     Done: '자바스크립트 스터디그룹',
     link: 'https://github.com/CodeSprint01-TeamSix',
-    term: '2023.10 ~ 2024.01.17',
+    term: '2023.10.04 ~ 2024.01.17',
   },
   {
     Done: '웹에이전시(인턴 - 웹퍼블리싱)',
