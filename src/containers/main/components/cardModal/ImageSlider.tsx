@@ -1,6 +1,6 @@
 import useMediaQueries from '@/hooks/useMediaQueries';
 import Image from 'next/image';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -31,7 +31,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
         {parseImage.map((image: string, index: number) => {
           return (
             <SwiperSlide key={index}>
-              <div className='mobile430:h-300pxr relative h-200pxr w-full rounded-md bg-gray100 tablet:h-350pxr'>
+              <div className='relative h-200pxr w-full rounded-md bg-gray100 mobile430:h-300pxr tablet:h-350pxr'>
                 <Image
                   src={image}
                   fill
@@ -63,7 +63,7 @@ function ImageSlider({ parseImage }: ImageSliderType) {
           return (
             <SwiperSlide key={index} className='inline-block !w-auto'>
               <div className='relative h-100pxr w-160pxr cursor-pointer tablet:w-150pxr'>
-                <Image src={image} fill unoptimized alt='이미지' />
+                <Image src={image} fill priority unoptimized alt='이미지' />
               </div>
             </SwiperSlide>
           );
