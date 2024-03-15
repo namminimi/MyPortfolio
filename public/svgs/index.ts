@@ -10,3 +10,5 @@ export { default as IconProfile } from './profile.svg';
 export { default as IconSend } from './send.svg';
 export { default as IconClose } from './close.svg';
 export { default as IconArrowLeftNon } from './arrowLeft-non.svg';
+export { default as IconWork } from './work.svg';
+export { default as IconStudy } from './study.svg';
