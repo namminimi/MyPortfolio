@@ -6,7 +6,7 @@
 * 24.03.05 - 진행중
 
 ## ⚙️ 기술 스택
-Html, CSS, Tailwind, Next.js, React, Typescript
+Html, CSS, Tailwind, Next.js(Page router), React, Typescript, mysql
 
 ## 🔗 배포링크
 
