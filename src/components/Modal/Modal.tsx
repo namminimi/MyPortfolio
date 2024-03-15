@@ -28,9 +28,6 @@ function Window({ children, id, update }: WindowType) {
     if (id) {
       open();
     }
-    return () => {
-      update(null);
-    };
   }, [id, open, update]);
 
   /* 모달 띄울시 스크롤바 지우지않고 고정 */

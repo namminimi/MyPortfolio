@@ -5,6 +5,8 @@ import { Modal } from '@/components';
 import CardImformation from '@/containers/main/components/cardModal/CardImformation';
 import { useEffect, useState } from 'react';
 import getProject from '@/data/getProject';
+import Loading from '@/pages/Loading';
+
 const NoSSRModal = dynamic(() => import('@/components/Modal/Modal'), {
   ssr: false,
 });
@@ -28,7 +30,7 @@ function CardLists({ projectLists }: ProjectListType) {
     };
   }, [projectId]);
 
-  if (!projectLists) return;
+  if (!projectLists) return <Loading />;
 
   return (
     <>

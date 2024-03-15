@@ -1,12 +1,12 @@
 import { ProjectType } from '@/pages';
-import Image from 'next/image';
-import { useRef, useState } from 'react';
 import ImageSlider from './ImageSlider';
 import Link from 'next/link';
 import getTextFormet from '@/utils/textFormat';
-import { IconArrowLeftNon, IconClose, IconGit, IconLink } from '@/public/svgs';
+import { IconClose, IconGit, IconLink } from '@/public/svgs';
 import CardBox from '@/components/Modal/cardBox';
 import PopupHeader from '@/components/Modal/header';
+import { Suspense } from 'react';
+import Loading from '@/pages/Loading';
 
 interface CardImformationType {
   projectLists: ProjectType | null;
@@ -14,7 +14,8 @@ interface CardImformationType {
 }
 
 function CardImformation({ projectLists, handleClose }: CardImformationType) {
-  if (!projectLists) return;
+  if (!projectLists) return <Loading />;
+
   const {
     p_images,
     p_backend,
@@ -45,7 +46,9 @@ function CardImformation({ projectLists, handleClose }: CardImformationType) {
             onClick={handleClose}
           />
         </div>
-        <ImageSlider parseImage={parseImage} />
+        <Suspense fallback={<Loading />}>
+          <ImageSlider parseImage={parseImage} />
+        </Suspense>
         <div className='flex-center flex-col items-start gap-10pxr pt-20pxr'>
           <section className='w-full border-b border-gray600 pb-10pxr'>
             <h3 className='detail-h3'>📀 프로젝트 소개</h3>

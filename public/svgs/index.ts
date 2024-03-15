@@ -12,3 +12,4 @@ export { default as IconClose } from './close.svg';
 export { default as IconArrowLeftNon } from './arrowLeft-non.svg';
 export { default as IconWork } from './work.svg';
 export { default as IconStudy } from './study.svg';
+export { default as IconLoading } from './loading.svg';
