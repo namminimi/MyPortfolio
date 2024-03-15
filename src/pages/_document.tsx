@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang='ko'>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         {/*  <!-- 페이스북 --> */}
         <meta property='og:type' content='website' />
         <meta property='og:image' content='/avifs/portfolio-logo.avif' />
