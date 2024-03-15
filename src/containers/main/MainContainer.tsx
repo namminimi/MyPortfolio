@@ -3,6 +3,8 @@ import { Title } from '@/components';
 import LinksBox from '@/containers/main/components/section-second';
 import ProjectsBox from './components/section-thired';
 import { ProjectType } from '@/pages';
+import WorkBox from './components/section-fourth';
+import OtherBox from './components/section-fifth';
 
 interface MainContainerType {
   projectLists: ProjectType[];
@@ -18,6 +20,14 @@ function MainContainer({ projectLists }: MainContainerType) {
       <section className='section-main'>
         <Title type='links' />
         <LinksBox />
+      </section>
+      <section className='section-main'>
+        <Title type='work' />
+        <WorkBox />
+      </section>
+      <section className='section-main'>
+        <Title type='other' />
+        <OtherBox />
       </section>
       <section className='section-main'>
         <Title type='projects' />

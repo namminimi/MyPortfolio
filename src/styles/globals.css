@@ -10,7 +10,7 @@
     @apply mt-30pxr flex flex-col gap-20pxr tablet:mt-60pxr;
   }
   .box {
-    @apply flex-center flex-col gap-25pxr rounded-2xl px-20pxr py-25pxr shadow-header tablet:items-start tablet:gap-50pxr tablet:px-50pxr tablet:py-50pxr pc:px-100pxr;
+    @apply flex-center flex-col gap-25pxr rounded-2xl px-20pxr py-25pxr shadow-header tablet:items-start tablet:gap-30pxr tablet:px-50pxr tablet:py-50pxr;
   }
   .modal {
     @apply absolute-center z-full;
@@ -44,8 +44,6 @@
   .scroll::-webkit-scrollbar-thumb {
     background-color: #c8c8c8;
     border-radius: 30px;
-  }
-  .scroll::-webkit-scrollbar-track {
   }
 
   .scroll-hidden::-webkit-scrollbar {

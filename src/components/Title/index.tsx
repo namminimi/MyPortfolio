@@ -1,8 +1,14 @@
 import { ReactNode } from 'react';
-import { IconFile, IconLinks, IconProfile } from '../../../public/svgs';
+import {
+  IconFile,
+  IconLinks,
+  IconProfile,
+  IconStudy,
+  IconWork,
+} from '../../../public/svgs';
 
 interface TitleType {
-  type: 'about' | 'links' | 'projects';
+  type: 'about' | 'links' | 'projects' | 'work' | 'other';
 }
 
 const SELECT_TITLE = {
@@ -17,6 +23,14 @@ const SELECT_TITLE = {
   projects: {
     icon: <IconFile width='100%' height='100%' viewBox='0 0 48 48' />,
     name: 'Projects',
+  },
+  work: {
+    icon: <IconWork width='100%' height='100%' viewBox='0 0 24 24' />,
+    name: 'Work Experience',
+  },
+  other: {
+    icon: <IconStudy width='100%' height='100%' viewBox='0 0 24 24' />,
+    name: 'Other Experience',
   },
 };
 

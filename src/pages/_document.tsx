@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang='ko'>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         {/*  <!-- 페이스북 --> */}
         <meta property='og:type' content='website' />
         <meta property='og:image' content='/avifs/portfolio-logo.avif' />
@@ -12,7 +11,7 @@ export default function Document() {
         <meta property='og:description' content='남민섭의 포트폴리오입니다' />
         <meta
           property='og:url'
-          content='https://my-portfolio-mu-azure.vercel.app/'
+          content={process.env.NEXT_PUBLIC_API_BASE_URL}
         />
         {/*<!-- 트위터 --> */}
         <meta name='twitter:card' content='summary_large_image' />
