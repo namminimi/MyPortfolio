@@ -13,6 +13,7 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "incremental": true,
+    "types": ["@types/gtag.js"],
     "paths": {
       "@/*": ["./src/*"],
       "@/components/*": ["src/components/*"],
