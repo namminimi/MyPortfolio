@@ -37,10 +37,9 @@ export default function App({ Component, pageProps }: AppProps) {
         strategy='afterInteractive'
         id='google-analytics-script'
         dangerouslySetInnerHTML={{
-          __html: `
-              window.dataLayer = window.dataLayer || [];
+          __html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag('ts', new Date());
+              gtag('js', new Date());
               gtag('config', '${GA_TRACKING_ID}', { 
                 page_path: window.location.pathname,
               });
